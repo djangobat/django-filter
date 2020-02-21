@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}
+Books
+{% endblock title %}
+{% block main %}
+<div class="row">
+    <div class="col-md-3">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Lọc tìm kiếm</span>
+        </h4>
+        <!-- Hiện thị bộ lọc tìm kiếm -->
+    </div>
+    <div class="col-md-8">
+        <h2>Books</h2>
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Danh sách books</span>
+            <span class="badge badge-secondary badge-pill">{{ books.count }}</span>
+        </h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tác giả</th>
+                    <th>Giá (VNĐ)</th>
+                    <th>Miêu tả</th>
+                    <th>Xuất bản</th>
+                    <th>Thể loại</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for book in books %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.owner.name }}</td>
+                    <td>{{ book.price }}</td>
+                    <td>{{ book.description|truncatewords:15 }}</td>
+                    <td>{{ book.created|date:"Y" }}</td>
+                    <td>{{ book.category }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock main %}

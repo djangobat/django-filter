@@ -1,0 +1,249 @@
+[
+{
+  "model": "books.author",
+  "pk": 1,
+  "fields": {
+    "name": "Bjarne Stroustrup"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 2,
+  "fields": {
+    "name": "Josh Lospinoso"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 3,
+  "fields": {
+    "name": "Stanley B. Lippman"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 4,
+  "fields": {
+    "name": "Wes McKinney"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 5,
+  "fields": {
+    "name": "Luciano Ramalho"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 6,
+  "fields": {
+    "name": "Brett Slatkin"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 7,
+  "fields": {
+    "name": "Marijn Haverbeke"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 8,
+  "fields": {
+    "name": "Mark Myers"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 9,
+  "fields": {
+    "name": "Eric Freeman"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 10,
+  "fields": {
+    "name": "Bear Bibeault"
+  }
+},
+{
+  "model": "books.category",
+  "pk": 2,
+  "fields": {
+    "name": "Python"
+  }
+},
+{
+  "model": "books.category",
+  "pk": 3,
+  "fields": {
+    "name": "Javascript"
+  }
+},
+{
+  "model": "books.category",
+  "pk": 4,
+  "fields": {
+    "name": "C++"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "C++ Concurrency in Action",
+    "description": "This bestseller has been updated and revised to cover all the latest changes to C++ 14 and 17! C++ Concurrency in Action, Second Edition teaches you everything you need to write robust and elegant multithreaded applications in C++17.",
+    "price": 250,
+    "category": 4,
+    "created": "2012-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "title": "A Tour of C++",
+    "description": "Stroustrup presents the C++ features in the context of the programming styles they support, such as object-oriented and generic programming. His tour is remarkably comprehensive. Coverage begins with the basics, then ranges widely through more advanced topics, including many that are new in C++17, such as move semantics, uniform initialization, lambda expressions, improved containers, random numbers, and concurrency. The tour even covers some extensions being made for C++20, such as concepts and modules, and ends with a discussion of the design and evolution of C++.",
+    "price": 200,
+    "category": 4,
+    "created": "2013-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 4,
+  "fields": {
+    "owner": 3,
+    "title": "Effective Modern C++",
+    "description": "Coming to grips with C++11 and C++14 is more than a matter of familiarizing yourself with the features they introduce (e.g., auto type declarations, move semantics, lambda expressions, and concurrency support). The challenge is learning to use those features effectively\u2014so that your software is correct, efficient, maintainable, and portable. That\u2019s where this practical book comes in. It describes how to write truly great software using C++11 and C++14\u2014i.e. using modern C++.",
+    "price": 400,
+    "category": 4,
+    "created": "2015-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 5,
+  "fields": {
+    "owner": 2,
+    "title": "C++17 - The Complete Guide: First Edition",
+    "description": "C++17 is the next evolution in modern C++ programming, now supported by major c++ compilers g++, clang, and Visual C++. Although adopting C++17 it is not as big a step as adopting C++11, C++17 does contain a large number of valuable language and library features, which support and change the way we program in C++.",
+    "price": 300,
+    "category": 4,
+    "created": "2011-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 6,
+  "fields": {
+    "owner": 2,
+    "title": "Learning Python",
+    "description": "Get a comprehensive, in-depth introduction to the core Python language with this hands-on book. Based on author Mark Lutz\u2019s popular training course, this updated fifth edition will help you quickly write efficient, high-quality code with Python. It\u2019s an ideal way to begin, whether you\u2019re new to programming or a professional developer versed in other languages.",
+    "price": 400,
+    "category": 2,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 7,
+  "fields": {
+    "owner": 2,
+    "title": "Automate the Boring Stuff with Python",
+    "description": "The second edition of this best-selling Python book (100,000+ copies sold in print alone) uses Python 3 to teach even the technically uninclined how to write programs that do in minutes what would take hours to do by hand. There is no prior programming experience required and the book is loved by liberal arts majors and geeks alike.",
+    "price": 450,
+    "category": 2,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 8,
+  "fields": {
+    "owner": 4,
+    "title": "Python for Data Analysis",
+    "description": "Get complete instructions for manipulating, processing, cleaning, and crunching datasets in Python. Updated for Python 3.6, the second edition of this hands-on guide is packed with practical case studies that show you how to solve a broad set of data analysis problems effectively. You\u2019ll learn the latest versions of pandas, NumPy, IPython, and Jupyter in the process.",
+    "price": 500,
+    "category": 2,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 9,
+  "fields": {
+    "owner": 5,
+    "title": "Fluent Python",
+    "description": "Python\u2019s simplicity lets you become productive quickly, but this often means you aren\u2019t using everything it has to offer. With this hands-on guide, you\u2019ll learn how to write effective, idiomatic Python code by leveraging its best\u2014and possibly most neglected\u2014features. Author Luciano Ramalho takes you through Python\u2019s core language features and libraries, and shows you how to make your code shorter, faster, and more readable at the same time.",
+    "price": 300,
+    "category": 2,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 10,
+  "fields": {
+    "owner": 6,
+    "title": "Effective Python",
+    "description": "It\u2019s easy to start developing programs with Python, which is why the language is so popular. However, Python\u2019s unique strengths, charms, and expressiveness can be hard to grasp, and there are hidden pitfalls that can easily trip you up.",
+    "price": 300,
+    "category": 2,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 11,
+  "fields": {
+    "owner": 7,
+    "title": "Eloquent JavaScript",
+    "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+    "price": 350,
+    "category": 3,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 12,
+  "fields": {
+    "owner": 8,
+    "title": "A Smarter Way to Learn JavaScrip",
+    "description": "How can you retain everything? Only by constantly being asked to play everything back. That's why people use flashcards. But my system does flashcards one better. After reading a short chapter, you go to my website and complete twenty interactive exercises. Algorithms check your work to make sure you know what you think you know. When you stumble, you do the exercise again. You keep trying until you know the chapter cold. The exercises are free.",
+    "price": 400,
+    "category": 3,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 13,
+  "fields": {
+    "owner": 9,
+    "title": "Head First JavaScript Programming",
+    "description": "This brain friendly guide teaches you everything from JavaScript language fundamentals to advanced topics, including objects, functions, and the browser\u2019s document object model. You won\u2019t just be reading\u2014you\u2019ll be playing games, solving puzzles, pondering mysteries, and interacting with JavaScript in ways you never imagined. And you\u2019ll write real code, lots of it, so you can start building your own web applications. Prepare to open your mind as you learn (and nail) key topics including:",
+    "price": 450,
+    "category": 3,
+    "created": "2020-02-21"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 14,
+  "fields": {
+    "owner": 10,
+    "title": "Secrets of the JavaScript Ninja",
+    "description": "More than ever, the web is a universal platform for all types of applications, and JavaScript is the language of the web. If you're serious about web development, it's not enough to be a decent JavaScript coder. You need to be ninja stealthy, efficient, and ready for anything. This audiobook shows you how.",
+    "price": 500,
+    "category": 3,
+    "created": "2020-02-21"
+  }
+}
+]
