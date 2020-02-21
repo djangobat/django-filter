@@ -1,6 +1,6 @@
 # Ví dụ sử dụng Django Filter
 
-Xem chi tiết bài viết tại [Hướng dẫn tạo bộ lọc tìm kiếm với django-filter ](http://djangobat.com/)
+Xem chi tiết bài viết tại [Hướng dẫn tạo bộ lọc tìm kiếm với django-filter ](https://djangobat.com/blog/huong-dan-tao-tim-kiem-dung-django-filter/)
 
 
 ## Cài đặt
