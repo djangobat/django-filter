@@ -7,9 +7,9 @@ from .filters import BookFilter
 def books_list(request):
     query = Book.objects.all()
     book_filter = BookFilter(request.GET, queryset=query)
-
+    
     context = {
-        'filter': book_filter,
+        'form': book_filter.form,
         'books': book_filter.qs,
     }
 

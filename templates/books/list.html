@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load widget_tweaks %}
 {% block title %}
 Books
 {% endblock title %}
@@ -8,7 +9,37 @@ Books
         <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Lọc tìm kiếm</span>
         </h4>
-        <!-- Hiện thị bộ lọc tìm kiếm -->
+        <form method="get" class="border p-3">
+            <div class="mb-3">
+                <label for="">Tên sách</label>
+                {% render_field form.title class="form-control" %}
+            </div>
+            <div class="mb-3">
+                <label for="">Tên tác giả</label>
+                {% render_field form.owner class="form-control" %}
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="">Giá</label>
+                    {% render_field form.price class="form-control" placeholder="Giá tối đa" %}
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="">Năm sản xuất</label>
+                    {% render_field form.created class="custom-select d-block w-100" %}
+                </div>
+            </div>
+            <hr class="mb-4">
+            <h4 class="mb-3">Thể loại</h4>
+
+            {% for item in form.category  %}
+            <div class="custom-control custom-checkbox">
+                {{ item.tag }}
+                <label>{{ item.choice_label }}</label>
+            </div> 
+            {% endfor %}
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Tìm kiếm</button>
+        </form>
     </div>
     <div class="col-md-8">
         <h2>Books</h2>
