@@ -14,7 +14,7 @@ git clone https://github.com/djangobat/django-filter.git
 Cài đặt requirements:
 
 ```bash
-cd custom_user
+cd django-filter
 pip install -r requirements.txt
 ```
 
