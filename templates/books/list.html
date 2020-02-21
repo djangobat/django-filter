@@ -9,13 +9,14 @@ Books
         <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Lọc tìm kiếm</span>
         </h4>
+        <!-- Hiện thị bộ lọc tìm kiếm -->
         <form method="get" class="border p-3">
             <div class="mb-3">
                 <label for="">Tên sách</label>
                 {% render_field form.title class="form-control" %}
             </div>
             <div class="mb-3">
-                <label for="">Tên tác giả</label>
+                <label for="">Tác giả</label>
                 {% render_field form.owner class="form-control" %}
             </div>
             <div class="row">
